@@ -1,0 +1,479 @@
+{
+  "settings": {
+    "brandName": "TechVision AI",
+    "niche": "Artificial Intelligence & Developer Tools",
+    "targetAudience": "Software Engineers, Product Managers, AI Enthusiasts, Tech Founders",
+    "geminiApiKey": "",
+    "modelName": "gemini-2.5-flash"
+  },
+  "preferenceModel": {
+    "styles": {
+      "Tutorial": {
+        "weight": 0.94,
+        "sampleCount": 2,
+        "avgEngagement": 2550
+      },
+      "Story": {
+        "weight": 0.82,
+        "sampleCount": 1,
+        "avgEngagement": 1800
+      },
+      "Educational": {
+        "weight": 0.72,
+        "sampleCount": 1,
+        "avgEngagement": 1200
+      },
+      "Meme": {
+        "weight": 0.35,
+        "sampleCount": 1,
+        "avgEngagement": 300
+      },
+      "Hot Take / Opinion": {
+        "weight": 0.26,
+        "sampleCount": 2,
+        "avgEngagement": 2.5
+      }
+    },
+    "topics": {
+      "AI": {
+        "weight": 0.88,
+        "sampleCount": 3,
+        "avgEngagement": 1400
+      },
+      "Python": {
+        "weight": 0.92,
+        "sampleCount": 1,
+        "avgEngagement": 2400
+      },
+      "Startup": {
+        "weight": 0.8,
+        "sampleCount": 1,
+        "avgEngagement": 1800
+      },
+      "AI Architecture & LLMs": {
+        "weight": 0.26,
+        "sampleCount": 2,
+        "avgEngagement": 2.5
+      }
+    },
+    "timingMatrix": {
+      "08:00": 78,
+      "09:00": 94,
+      "10:00": 88,
+      "11:00": 74,
+      "12:00": 65,
+      "13:00": 60,
+      "14:00": 82,
+      "15:00": 89,
+      "16:00": 79,
+      "17:00": 68,
+      "18:00": 55,
+      "19:00": 71,
+      "20:00": 85,
+      "21:00": 64
+    },
+    "lengthPreference": {
+      "Short (< 50 words)": 0.35,
+      "Medium (50-150 words)": 0.85,
+      "Long / Thread (150+ words)": 0.95
+    },
+    "tonePreference": {
+      "Informative & Authoritative": 0.92,
+      "Provocative & Direct": 0.85,
+      "Casual & Conversational": 0.65,
+      "Overly Promotional": 0.2
+    },
+    "learnedInsights": [
+      {
+        "id": "rule_format_vs_topic",
+        "category": "Format vs Topic Nuance",
+        "insight": "Tutorial-style technical posts (2,700 avg) have generated significantly more engagement than meme-style AI posts (300 avg). Python/tutorial content also produces exceptionally strong discussion.",
+        "confidence": 0.96,
+        "dateDiscovered": "2026-09-28"
+      },
+      {
+        "id": "rule_comment_depth",
+        "category": "Comment Depth vs Likes",
+        "insight": "Tutorial posts spark high comment-to-like ratios (21-23% comment density with 500+ comments), whereas meme posts generate surface-level likes with minimal discussion retention.",
+        "confidence": 0.93,
+        "dateDiscovered": "2026-09-27"
+      },
+      {
+        "id": "rule_python_resonance",
+        "category": "Topic Resonance",
+        "insight": "Python AsyncIO and backend code tutorials drive 2.4x higher developer bookmarking and code snippet exchanges than general AI news.",
+        "confidence": 0.91,
+        "dateDiscovered": "2026-09-26"
+      },
+      {
+        "id": "rule_startup_stories",
+        "category": "Audience Sentiment",
+        "insight": "Bootstrapping stories resonate strongly with founder personas (88% positive sentiment), triggering questions on growth loops.",
+        "confidence": 0.88,
+        "dateDiscovered": "2026-09-25"
+      }
+    ]
+  },
+  "audienceMemory": [
+    {
+      "id": "mem_1",
+      "commenter": "Alex Rivera (@arivera_dev)",
+      "persona": "Senior Staff Engineer",
+      "sentiment": "Positive",
+      "keyInterest": "Python Tutorials & AsyncIO",
+      "history": [
+        "Commented on Python Tutorial: 'This AsyncIO pattern cut our queue processing latency by half. Bookmarked!'",
+        "Shared code snippet in replies demonstrating task cancellation error handling."
+      ],
+      "lastInteraction": "2026-09-28T14:30:00Z"
+    },
+    {
+      "id": "mem_2",
+      "commenter": "Sarah Chen (@sarah_ai)",
+      "persona": "Lead AI Architect",
+      "sentiment": "Positive",
+      "keyInterest": "AI Local RAG Pipelines",
+      "history": [
+        "Commented on AI Tutorial: 'Excellent breakdown of Llama 3 quantization + vLLM. Much more valuable than generic AI memes.'",
+        "Asked about latency benchmarking under peak concurrent requests."
+      ],
+      "lastInteraction": "2026-09-29T09:15:00Z"
+    },
+    {
+      "id": "mem_3",
+      "commenter": "Marcus Vance (@mvance_tech)",
+      "persona": "Tech Founder & CTO",
+      "sentiment": "Positive",
+      "keyInterest": "Startup Growth Stories",
+      "history": [
+        "Commented on Startup Story: 'Hitting 10k users organically through dev tools is inspiring. What was your main acquisition channel?'",
+        "Retweeted post to 15k founder followers."
+      ],
+      "lastInteraction": "2026-09-27T18:45:00Z"
+    },
+    {
+      "id": "mem_4",
+      "commenter": "Tom Skeptic (@tom_code_qa)",
+      "persona": "Infrastructure QA Lead",
+      "sentiment": "Neutral/Skeptical",
+      "keyInterest": "Educational AI Deep Dives",
+      "history": [
+        "Commented on AI Educational: 'Good overview of self-attention, but would love to see exact memory footprints on 8-bit vs 4-bit.'",
+        "Commented on AI Meme: 'Too simplified, doesn't reflect real infra challenges.'"
+      ],
+      "lastInteraction": "2026-09-28T11:20:00Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post_1790663440160",
+      "content": "Stop using massive LLMs for simple classification tasks.\n\nA fine-tuned 3B model runs 10x faster, costs 95% less, and hits 98% accuracy when scoped correctly.\n\nHere is our 4-step distillation playbook 🧵👇",
+      "platform": "Twitter",
+      "style": "Hot Take / Opinion",
+      "topic": "AI Architecture & LLMs",
+      "tone": "Informative & Authoritative",
+      "postedAt": "2026-09-29T06:30:40.160Z",
+      "metrics": {
+        "likes": 130,
+        "shares": 44,
+        "comments": 0,
+        "clicks": 569,
+        "impressions": 5862,
+        "engagementScore": 2.2,
+        "sentimentBreakdown": {
+          "positive": 60,
+          "neutral": 15,
+          "negative": 5
+        }
+      },
+      "comments": []
+    },
+    {
+      "id": "post_1790663260534",
+      "content": "can i post ai posts on my social media\n",
+      "platform": "Twitter",
+      "style": "Hot Take / Opinion",
+      "topic": "AI Architecture & LLMs",
+      "tone": "Informative & Authoritative",
+      "postedAt": "2026-09-29T06:27:40.534Z",
+      "metrics": {
+        "likes": 220,
+        "shares": 1,
+        "comments": 0,
+        "clicks": 490,
+        "impressions": 9381,
+        "engagementScore": 2.7,
+        "sentimentBreakdown": {
+          "positive": 60,
+          "neutral": 15,
+          "negative": 5
+        }
+      },
+      "comments": []
+    },
+    {
+      "id": "post_5",
+      "content": "Step-by-Step AI Tutorial: Building a production-grade local RAG pipeline using Llama 3, vLLM, and vector search in 15 minutes 🧵👇\n\n1. Quantize Llama 3 to INT4 for 68% VRAM reduction\n2. Set up chunked prefill attention with vLLM\n3. Connect hybrid Postgres BM25 + pgvector reranking\n4. Benchmark latency vs OpenAI API",
+      "platform": "Twitter",
+      "style": "Tutorial",
+      "topic": "AI",
+      "tone": "Informative & Authoritative",
+      "postedAt": "2026-09-29T09:00:00Z",
+      "metrics": {
+        "likes": 1850,
+        "shares": 300,
+        "comments": 550,
+        "clicks": 1420,
+        "impressions": 18500,
+        "engagementScore": 9.8,
+        "totalEngagement": 2700,
+        "sentimentBreakdown": {
+          "positive": 94,
+          "neutral": 5,
+          "negative": 1
+        }
+      },
+      "comments": [
+        {
+          "id": "c_5_1",
+          "author": "Sarah Chen",
+          "handle": "@sarah_ai",
+          "role": "Lead AI Architect",
+          "avatar": "👩‍💻",
+          "content": "Excellent breakdown of Llama 3 quantization + vLLM. Much more valuable than generic AI memes.",
+          "sentiment": "Positive",
+          "createdAt": "2026-09-29T09:15:00Z"
+        },
+        {
+          "id": "c_5_2",
+          "author": "Alex Rivera",
+          "handle": "@arivera_dev",
+          "role": "Senior Staff Engineer",
+          "avatar": "👨‍💻",
+          "content": "Tested your pgvector reranking snippet on our benchmark dataset—latency dropped from 850ms to 120ms. Incredible guide!",
+          "sentiment": "Positive",
+          "createdAt": "2026-09-29T09:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "post_3",
+      "content": "Python AsyncIO Tutorial: Master concurrency in 10 minutes with clean code patterns.\n\nLearn how to prevent loop blocking, manage thread pools cleanly, and handle task cancellation gracefully without memory leaks.",
+      "platform": "Twitter",
+      "style": "Tutorial",
+      "topic": "Python",
+      "tone": "Informative & Authoritative",
+      "postedAt": "2026-09-28T14:00:00Z",
+      "metrics": {
+        "likes": 1600,
+        "shares": 280,
+        "comments": 520,
+        "clicks": 1150,
+        "impressions": 15800,
+        "engagementScore": 9.2,
+        "totalEngagement": 2400,
+        "sentimentBreakdown": {
+          "positive": 92,
+          "neutral": 7,
+          "negative": 1
+        }
+      },
+      "comments": [
+        {
+          "id": "c_3_1",
+          "author": "Alex Rivera",
+          "handle": "@arivera_dev",
+          "role": "Senior Staff Engineer",
+          "avatar": "👨‍💻",
+          "content": "This AsyncIO pattern cut our queue processing latency by half. Bookmarked!",
+          "sentiment": "Positive",
+          "createdAt": "2026-09-28T14:30:00Z"
+        },
+        {
+          "id": "c_3_2",
+          "author": "Dave Miller",
+          "handle": "@dave_builds",
+          "role": "Full-Stack Dev",
+          "avatar": "👨‍💻",
+          "content": "Super clean Python tutorial. Most guides skip loop cancellation edge cases, thanks for including it!",
+          "sentiment": "Positive",
+          "createdAt": "2026-09-28T14:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "post_4",
+      "content": "Startup Story: How we bootstrapped our AI developer tool to 10k active developers without spending a single dollar on ads.\n\nOur secret: Building in public, writing deep technical tutorials, and listening closely to developer feedback.",
+      "platform": "LinkedIn",
+      "style": "Story",
+      "topic": "Startup",
+      "tone": "Informative & Authoritative",
+      "postedAt": "2026-09-27T17:00:00Z",
+      "metrics": {
+        "likes": 1250,
+        "shares": 210,
+        "comments": 340,
+        "clicks": 980,
+        "impressions": 12100,
+        "engagementScore": 8.1,
+        "totalEngagement": 1800,
+        "sentimentBreakdown": {
+          "positive": 88,
+          "neutral": 10,
+          "negative": 2
+        }
+      },
+      "comments": [
+        {
+          "id": "c_4_1",
+          "author": "Marcus Vance",
+          "handle": "@mvance_tech",
+          "role": "Tech Founder & CTO",
+          "avatar": "👨‍💼",
+          "content": "Hitting 10k users organically through dev tools is inspiring. What was your main acquisition channel?",
+          "sentiment": "Positive",
+          "createdAt": "2026-09-27T18:45:00Z"
+        }
+      ]
+    },
+    {
+      "id": "post_1",
+      "content": "Post 1: Understanding LLM Transformer Attention Mechanics.\n\nAn educational breakdown of Self-Attention vs Multi-Head Attention, query-key-value projections, and positional encodings.",
+      "platform": "LinkedIn",
+      "style": "Educational",
+      "topic": "AI",
+      "tone": "Informative & Authoritative",
+      "postedAt": "2026-09-26T10:00:00Z",
+      "metrics": {
+        "likes": 920,
+        "shares": 100,
+        "comments": 180,
+        "clicks": 620,
+        "impressions": 8400,
+        "engagementScore": 7.2,
+        "totalEngagement": 1200,
+        "sentimentBreakdown": {
+          "positive": 85,
+          "neutral": 13,
+          "negative": 2
+        }
+      },
+      "comments": [
+        {
+          "id": "c_1_1",
+          "author": "Tom Skeptic",
+          "handle": "@tom_code_qa",
+          "role": "Infrastructure QA Lead",
+          "avatar": "🕵️‍♂️",
+          "content": "Good overview of self-attention, but would love to see exact memory footprints on 8-bit vs 4-bit.",
+          "sentiment": "Neutral",
+          "createdAt": "2026-09-26T10:30:00Z"
+        }
+      ]
+    },
+    {
+      "id": "post_2",
+      "content": "Post 2: When your 70B parameter model hallucinated and sent the CEO a fake financial report 😅 MEME",
+      "platform": "Twitter",
+      "style": "Meme",
+      "topic": "AI",
+      "tone": "Casual & Conversational",
+      "postedAt": "2026-09-25T15:00:00Z",
+      "metrics": {
+        "likes": 250,
+        "shares": 30,
+        "comments": 20,
+        "clicks": 90,
+        "impressions": 2100,
+        "engagementScore": 3,
+        "totalEngagement": 300,
+        "sentimentBreakdown": {
+          "positive": 50,
+          "neutral": 40,
+          "negative": 10
+        }
+      },
+      "comments": [
+        {
+          "id": "c_2_1",
+          "author": "Tom Skeptic",
+          "handle": "@tom_code_qa",
+          "role": "Infrastructure QA Lead",
+          "avatar": "🕵️‍♂️",
+          "content": "Too simplified, doesn't reflect real infra challenges.",
+          "sentiment": "Neutral",
+          "createdAt": "2026-09-25T15:20:00Z"
+        }
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "id": "p1",
+      "name": "Sarah Chen",
+      "handle": "@sarah_ai",
+      "role": "Lead AI Architect",
+      "avatar": "👩‍💻",
+      "biasStyle": [
+        "Tutorial",
+        "Educational"
+      ],
+      "biasTopics": [
+        "AI",
+        "Python"
+      ],
+      "engagementRate": 0.95,
+      "typicalCommentTone": "Constructive & Technical"
+    },
+    {
+      "id": "p2",
+      "name": "Alex Rivera",
+      "handle": "@arivera_dev",
+      "role": "Senior Staff Engineer",
+      "avatar": "👨‍💻",
+      "biasStyle": [
+        "Tutorial",
+        "Educational"
+      ],
+      "biasTopics": [
+        "Python",
+        "AI"
+      ],
+      "engagementRate": 0.9,
+      "typicalCommentTone": "Pragmatic & Code-Focused"
+    },
+    {
+      "id": "p3",
+      "name": "Marcus Vance",
+      "handle": "@mvance_tech",
+      "role": "Tech Founder & CTO",
+      "avatar": "👨‍💼",
+      "biasStyle": [
+        "Story",
+        "Tutorial"
+      ],
+      "biasTopics": [
+        "Startup",
+        "AI"
+      ],
+      "engagementRate": 0.85,
+      "typicalCommentTone": "Strategic & Inquisitive"
+    },
+    {
+      "id": "p4",
+      "name": "Tom Skeptic",
+      "handle": "@tom_code_qa",
+      "role": "Infrastructure QA Lead",
+      "avatar": "🕵️‍♂️",
+      "biasStyle": [
+        "Educational",
+        "Tutorial"
+      ],
+      "biasTopics": [
+        "AI"
+      ],
+      "engagementRate": 0.5,
+      "typicalCommentTone": "Challenging & Detail-Oriented"
+    }
+  ]
+}

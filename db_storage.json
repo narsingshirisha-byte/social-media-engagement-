@@ -1,0 +1,218 @@
+{
+  "users": [
+    {
+      "id": "u_1",
+      "username": "admin",
+      "brandName": "TechVision AI",
+      "niche": "Artificial Intelligence & Developer Tools",
+      "targetAudience": "Software Engineers, Product Managers, Tech Founders",
+      "appMode": "DEMO",
+      "createdAt": "2026-09-29T07:21:38.233Z"
+    }
+  ],
+  "social_accounts": [
+    {
+      "id": "acc_x_1",
+      "platform": "X/Twitter",
+      "accountName": "@techvision_ai",
+      "status": "DEMO",
+      "lastSync": "2026-09-29T07:23:52.610Z",
+      "permissions": [
+        "tweet.read",
+        "tweet.write",
+        "users.read"
+      ]
+    },
+    {
+      "id": "acc_li_1",
+      "platform": "LinkedIn",
+      "accountName": "TechVision Corporate",
+      "status": "DEMO",
+      "lastSync": "2026-09-29T07:23:52.611Z",
+      "permissions": [
+        "w_member_social",
+        "r_liteprofile"
+      ]
+    },
+    {
+      "id": "acc_ig_1",
+      "platform": "Instagram",
+      "accountName": "@techvision_dev",
+      "status": "DISCONNECTED",
+      "lastSync": "2026-09-29T07:23:52.612Z",
+      "permissions": [
+        "instagram_basic",
+        "instagram_content_publish"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "sim_post_3",
+      "platform": "Instagram",
+      "accountId": "acc_ig_1",
+      "postId": "sim_post_3",
+      "text": "[SIMULATED] Python AsyncIO Tutorial: Master concurrency in 10 minutes with clean code patterns.",
+      "createdAt": "2026-09-28T07:23:52.611Z",
+      "impressions": 15800,
+      "likes": 1600,
+      "comments": 520,
+      "shares": 280,
+      "clicks": 1150,
+      "engagementRate": 0.1519,
+      "url": "https://demo.simulated/post_3",
+      "style": "Technical Deep-Dive",
+      "topic": "AI Architecture & LLMs",
+      "metrics": {
+        "likes": 1600,
+        "comments": 520,
+        "shares": 280,
+        "clicks": 1150,
+        "impressions": 15800,
+        "engagementScore": 7.6
+      },
+      "contentFeatures": {
+        "topic": "Python",
+        "subtopic": "AsyncIO & Concurrency",
+        "contentType": "Tutorial",
+        "style": "Technical Deep Dive",
+        "tone": "Educational & Authoritative",
+        "length": 95,
+        "wordCount": 13,
+        "hook": "Data/Stat Hook",
+        "cta": "None / Implicit",
+        "hashtags": [],
+        "mentions": [],
+        "mediaType": "Text"
+      },
+      "lastSynced": "2026-09-29T07:23:52.611Z"
+    },
+    {
+      "id": "sim_post_5",
+      "platform": "Instagram",
+      "accountId": "acc_ig_1",
+      "postId": "sim_post_5",
+      "text": "[SIMULATED] Step-by-Step AI Tutorial: Building a production-grade local RAG pipeline using Llama 3 & vLLM.",
+      "createdAt": "2026-09-29T07:23:52.611Z",
+      "impressions": 18500,
+      "likes": 1850,
+      "comments": 550,
+      "shares": 300,
+      "clicks": 1420,
+      "engagementRate": 0.1459,
+      "url": "https://demo.simulated/post_5",
+      "style": "Technical Deep-Dive",
+      "topic": "AI Architecture & LLMs",
+      "metrics": {
+        "likes": 1850,
+        "comments": 550,
+        "shares": 300,
+        "clicks": 1420,
+        "impressions": 18500,
+        "engagementScore": 7.3
+      },
+      "contentFeatures": {
+        "topic": "Artificial Intelligence",
+        "subtopic": "RAG & Vector Search",
+        "contentType": "Tutorial",
+        "style": "Technical Deep Dive",
+        "tone": "Educational & Authoritative",
+        "length": 106,
+        "wordCount": 15,
+        "hook": "Data/Stat Hook",
+        "cta": "None / Implicit",
+        "hashtags": [],
+        "mentions": [],
+        "mediaType": "Text"
+      },
+      "lastSynced": "2026-09-29T07:23:52.611Z"
+    }
+  ],
+  "post_metrics": [],
+  "comments": [],
+  "audience_profiles": [],
+  "audience_interactions": [],
+  "content_features": [],
+  "experiments": [
+    {
+      "id": "exp_1790666632612",
+      "postId": "post_5",
+      "prediction": 8.5,
+      "actual": 7.8,
+      "difference": -0.7,
+      "learning": "Post underperformed prediction by -0.7. Audience showed lower affinity than baseline predicted.",
+      "timestamp": "2026-09-29T07:23:52.612Z"
+    },
+    {
+      "id": "exp_1",
+      "title": "AI Tutorial vs AI Meme Engagement Comparison",
+      "prediction": 8.2,
+      "actual": 7.4,
+      "difference": -0.8,
+      "learning": "Tutorials remain strong but predicted performance was too optimistic",
+      "timestamp": "2026-09-29T07:21:38.234Z"
+    }
+  ],
+  "predictions": [],
+  "memories": [
+    {
+      "id": "mem_h_1790666632613_rkpe",
+      "category": "EXPERIMENT",
+      "content": "[Experiment Log] Post post_5: Predicted 8.5/10 vs Actual 7.8/10 (delta -0.7). Post underperformed prediction by -0.7. Audience showed lower affinity than baseline predicted.",
+      "confidence": 0.92,
+      "metadata": {
+        "id": "exp_1790666632612",
+        "postId": "post_5",
+        "prediction": 8.5,
+        "actual": 7.8,
+        "difference": -0.7,
+        "learning": "Post underperformed prediction by -0.7. Audience showed lower affinity than baseline predicted.",
+        "timestamp": "2026-09-29T07:23:52.612Z"
+      },
+      "date": "2026-09-29",
+      "createdAt": "2026-09-29T07:23:52.613Z"
+    },
+    {
+      "id": "mem_h_1790666632013_xde8",
+      "category": "EXPERIMENT",
+      "content": "[Test] Tutorial posts deliver +85% higher retention",
+      "confidence": 0.95,
+      "metadata": {},
+      "date": "2026-09-29",
+      "createdAt": "2026-09-29T07:23:52.013Z"
+    },
+    {
+      "id": "mem_h1",
+      "category": "AUDIENCE",
+      "content": "Technical audience strongly prefers code snippets and benchmark stats over high-level promotional graphics.",
+      "confidence": 0.94,
+      "date": "2026-09-25"
+    },
+    {
+      "id": "mem_h2",
+      "category": "CONTENT",
+      "content": "Tutorial-style posts drive 8.5x higher engagement than generic meme content.",
+      "confidence": 0.96,
+      "date": "2026-09-28"
+    },
+    {
+      "id": "mem_h3",
+      "category": "ENGAGEMENT",
+      "content": "Tuesday and Thursday mornings between 09:00 - 10:30 AM EST yield peak response velocity.",
+      "confidence": 0.89,
+      "date": "2026-09-27"
+    }
+  ],
+  "scheduled_posts": [
+    {
+      "id": "sched_1",
+      "platform": "Twitter",
+      "topic": "AI Architecture & LLMs",
+      "style": "Tutorial",
+      "content": "Step-by-Step guide to 4-bit LLM quantization with vLLM 🧵👇",
+      "scheduledFor": "2026-09-30T09:00:00Z",
+      "status": "PENDING_APPROVAL"
+    }
+  ],
+  "agent_runs": []
+}
